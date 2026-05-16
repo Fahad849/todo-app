@@ -6,13 +6,13 @@ const taskList = document.getElementById("taskList");
 
 let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
-function saveTasks(){
+function saveTasks() {
 
     localStorage.setItem("tasks", JSON.stringify(tasks));
 
 }
 
-function renderTasks(){
+function renderTasks() {
 
     taskList.innerHTML = "";
 
@@ -52,7 +52,7 @@ addBtn.addEventListener("click", () => {
 
     const taskText = taskInput.value;
 
-    if(taskText === ""){
+    if(taskText === "") {
         return;
     }
 
